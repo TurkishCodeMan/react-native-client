@@ -7,7 +7,8 @@ import {EmployeeCreate2} from 'src/pages/auth/employee-create-2.screen';
 import {EmployerCreate} from 'src/pages/auth/employer-create.screen';
 import {EmployerPreferences} from 'src/pages/auth/employer-preferences.screen';
 import {EmployerPreferences2} from 'src/pages/auth/employer-preferences-2.screen';
-import {Login} from 'src/pages/auth/login.screen';
+import {Login} from 'src/pages/auth/login-slide.screen';
+import { LoginFingerprint } from 'src/pages/auth/login-fingerprint.screen';
 
 const AuthStack = createNativeStackNavigator<AuthStackParamsList>();
 
@@ -20,7 +21,12 @@ export function AuthNavigator() {
         component={StartPage}
       />
       <AuthStack.Screen
-        options={{headerShown: false}}
+        options={{
+          title: '',
+          headerStyle: {
+            backgroundColor: 'snowGray',
+          },
+        }}
         name="EmployeeCreate"
         component={EmployeeCreate}
       />
@@ -68,6 +74,17 @@ export function AuthNavigator() {
         }}
         name="EmployerPreferences2"
         component={EmployerPreferences2}
+      />
+
+<AuthStack.Screen
+        options={{
+          title: '',
+          headerStyle: {
+            backgroundColor: '#F6F7FB',
+          },
+        }}
+        name="LoginFingerprint"
+        component={LoginFingerprint}
       />
     </AuthStack.Navigator>
   );

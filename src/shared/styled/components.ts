@@ -49,7 +49,7 @@ export const StyledText = styled.Text<StyledProps>(
       prop: 'size',
       variants: {
         heading: {
-          fontSize: 'fontSize32',
+          fontSize: 'fontSize30',
           color: 'lightBlack',
           fontWeight: '700',
         },
@@ -61,7 +61,7 @@ export const StyledText = styled.Text<StyledProps>(
         buttonPrimary: {
           color: 'white',
           fontWeight: '500',
-          fontSize: 'fontSize16',
+          fontSize: 'fontSize18',
         },
         buttonSecondary: {
           color: 'lightBlue',
@@ -89,14 +89,14 @@ export const StyledButton = styled.TouchableOpacity<
           backgroundColor: 'lightBlue',
           color: 'white',
           paddingX: 4,
-          paddingY: 2,
+          paddingY: 3,
           borderRadius: 10,
         },
         secondary: {
           backgroundColor: 'white',
           color: 'lightBlue',
           paddingX: 4,
-          paddingY: 2,
+          paddingY: 3,
           borderRadius: 10,
           border: '1px solid',
           borderColor: 'lightBlue',

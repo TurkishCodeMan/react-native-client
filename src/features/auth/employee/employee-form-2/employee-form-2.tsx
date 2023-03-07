@@ -159,7 +159,7 @@ export function EmployeeForm2({
           />
         </StyledView>
       </StyledView>
-      <StyledText textAlign="left" width="100%" mt={55} mb={20}>
+      <StyledText textAlign="left" width="100%" mt={55} mb={20} fontWeight="bold">
         I Work here as
       </StyledText>
 
@@ -192,7 +192,7 @@ export function EmployeeForm2({
 
       <StyledView mt={120} width="100%">
         <StyledButton onPress={handleSubmit(onSubmit)} variant="primary">
-          <StyledText textAlign="center" color="white">
+          <StyledText textAlign="center" color="white" size="buttonPrimary" >
             Next
           </StyledText>
         </StyledButton>

@@ -2,8 +2,11 @@ export const FONT_SIZES = {
   fontSize12: 12,
   fontSize14: 14,
   fontSize16: 16,
+  fontSize18: 18,
   fontSize20: 20,
   fontSize24: 24,
+  fontSize28: 28,
+  fontSize30: 30,
   fontSize32: 32,
 };
 
@@ -32,7 +35,7 @@ export const FONT_WEIGHTS=[100, 200, 300, 400, 500, 600, 700, 800, 900]
 
 export const COLORS = {
   white: '#fff',
-  snowGray: '#fafafa',
+  snowGray: '#F6F7FB',
   darkSnowGray: '#f0f0f0',
   lightBlue: '#1376fb',
   lightBlack:'#262753',

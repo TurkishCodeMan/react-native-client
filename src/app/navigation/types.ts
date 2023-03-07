@@ -28,6 +28,7 @@ export type AuthStackParamsList = {
   EmployeeCreate: undefined;
   EmployeeCreate2: EmployeeCreate2Props;
   Login: undefined;
+  LoginFingerprint:undefined;
   EmployerCreate: undefined;
   EmployerPreferences: EmployerPreferencesProps;
   EmployerPreferences2: EmployerPreferences2Props;

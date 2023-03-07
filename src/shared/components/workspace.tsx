@@ -70,7 +70,7 @@ export function WorkspaceTag({
       onPress={() => onSelect?.(id ?? '')}
       width={60}
       height={60}
-      borderRadius={15}
+      borderRadius={8}
       bg={selected ? 'blue' : 'darkSnowGray'}
       display="flex"
       justifyContent="center"

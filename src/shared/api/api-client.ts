@@ -1,7 +1,7 @@
 import {getUserWithToken} from '../helpers/auth-provider';
 
- //const apiURL = 'https://octopus-app-9s2t7.ondigitalocean.app/api';
-const apiURL = 'http://192.168.1.35:1337/api';
+ const apiURL = 'https://octopus-app-9s2t7.ondigitalocean.app/api';
+//const apiURL = 'http://192.168.1.35:1337/api';
 interface Data<K> {
   data?: K | {data: K}; //Change Client Types,
   headers?: string[];

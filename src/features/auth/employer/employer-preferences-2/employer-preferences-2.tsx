@@ -145,7 +145,7 @@ export function EmployerPreferences2Form({
         <StyledText
           color="lightBlack"
           textAlign="center"
-          fontSize={28}
+          fontSize={25}
           fontWeight="bold">
           How many Sub Contracters
         </StyledText>
@@ -158,22 +158,24 @@ export function EmployerPreferences2Form({
         </StyledText>
       </StyledView>
 
-      <StyledView alignItems="center">
+      <StyledView>
         <StyledView>
           <StyledText
             mt={30}
             color="lightBlack"
-            textAlign="center"
+            textAlign="left"
             fontSize={18}
             fontWeight="bold">
             How many contracters?
           </StyledText>
         </StyledView>
         <StyledView mt={10}>
-          <StyledView display="flex" flexDirection="row" width="100%">
+          <StyledView display="flex" flexDirection="row" width="100%"bg="white" px={2}
+          py={3} justifyContent="center"
+          borderRadius={10} {...SHADOW}>
             <StyledTouchOpacity
               onPress={() => remove(contracterSize)}
-              borderRadius={15}
+              borderRadius={8}
               border="1px solid"
               display="flex"
               alignItems="center"
@@ -191,7 +193,7 @@ export function EmployerPreferences2Form({
               border="1px solid"
               borderColor="blue"
               pt={1}
-              width="50%">
+              width="60%">
               {contracterSize.value}
             </StyledText>
             <StyledTouchOpacity
@@ -209,13 +211,15 @@ export function EmployerPreferences2Form({
         <StyledText
           mt={30}
           color="lightBlack"
-          textAlign="center"
+          textAlign="left"
           fontSize={18}
           fontWeight="bold">
           How many Employees do they have?
         </StyledText>
         <StyledView style={{...SHADOW}} mt={10}>
-          <StyledView display="flex" flexDirection="row" width="100%">
+          <StyledView display="flex" flexDirection="row" width="100%" bg="white" px={2}
+          py={3} justifyContent="center"
+          borderRadius={10} {...SHADOW}>
             <StyledTouchOpacity
               onPress={() => remove(contracterEmployeeSize)}
               borderRadius={15}
@@ -236,12 +240,12 @@ export function EmployerPreferences2Form({
               borderRadius={15}
               border="1px solid"
               borderColor="blue"
-              width="50%">
+              width="60%">
               {contracterEmployeeSize.value}
             </StyledText>
             <StyledTouchOpacity
               onPress={() => add(contracterEmployeeSize)}
-              borderRadius={15}
+              borderRadius={8}
               border="1px solid"
               display="flex"
               alignItems="center"
@@ -302,7 +306,7 @@ export function EmployerPreferences2Form({
             mt={50}
             width="100%"
             variant="primary">
-            <StyledText textAlign="center" color="white" fontWeight="bold">
+            <StyledText textAlign="center" color="white" fontWeight="bold" size="buttonPrimary">
               Next
             </StyledText>
           </StyledButton>

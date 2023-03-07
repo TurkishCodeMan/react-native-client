@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {
+  SHADOW,
   StyledButton,
   StyledText,
   StyledTextInput,
@@ -76,40 +77,44 @@ export function EmployerForm({
           Username
         </StyledText>
         <StyledTextInput
+        {...SHADOW}
           variant="secondary"
           value={username.value}
           onChangeText={username.onChange}
         />
-        <StyledText mb={2} fontWeight="semibold">
+        <StyledText mb={2} mt={2} fontWeight="semibold">
           Company Name
         </StyledText>
         <StyledTextInput
+        {...SHADOW}
           variant="secondary"
           value={companyName.value}
           onChangeText={companyName.onChange}
         />
-        <StyledText mb={2} fontWeight="semibold">
+        <StyledText mb={2} mt={2} fontWeight="semibold">
           Email
         </StyledText>
         <StyledTextInput
+        {...SHADOW}
           variant="secondary"
           keyboardType="email-address"
           value={email.value}
           onChangeText={email.onChange}
         />
-        <StyledText mb={2} fontWeight="semibold">
+        <StyledText mb={2} mt={2} fontWeight="semibold">
           Password
         </StyledText>
         <StyledTextInput
+        {...SHADOW}
           secureTextEntry
           variant="secondary"
           value={password.value}
           onChangeText={password.onChange}
         />
       </StyledView>
-      <StyledView mt={20}>
+      <StyledView mt={30}>
         <StyledButton onPress={handleSubmit(submit)} variant="primary">
-          <StyledText textAlign="center" color="white" fontWeight="bold">
+          <StyledText size="buttonPrimary" textAlign="center" color="white" fontWeight="bold">
             Next
           </StyledText>
         </StyledButton>

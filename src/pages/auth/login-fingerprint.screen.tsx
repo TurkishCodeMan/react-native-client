@@ -5,19 +5,18 @@ import { StackScreenProps } from '@react-navigation/stack';
 import { AuthStackParamsList } from '../../app/navigation/types';
 const imageSrc = require('../../../public/start.png');
 
-type StartPageProps=StackScreenProps<AuthStackParamsList,'StartPage'>
+type LoginFingerprintProps=StackScreenProps<AuthStackParamsList,'LoginFingerprint'>
 
-export function StartPage({navigation}:StartPageProps) {
+export function LoginFingerprint({navigation}:LoginFingerprintProps) {
   return (
     <Layout>
       <StyledView flex={1}  alignItems="center">
         <StyledView display="flex" justifyContent="center" alignItems="center">
-          <StyledText size="heading" paddingBottom={47}>
-            D-summa Time Track
+          <StyledText size="heading" paddingBottom={1}>
+          Your biometric signatur
           </StyledText>
           <StyledText size="title">
-            Keep better track on your employéers working hours
-          </StyledText>
+            Keeps your security emproved         </StyledText>
         </StyledView>
         <StyledView>
           <StyledImage source={imageSrc} width={360} height={340}/>
@@ -39,7 +38,7 @@ export function StartPage({navigation}:StartPageProps) {
       
 <StyledText fontWeight="bold" color="lightBlack" pt={25} top={0} bottom={0}> 
          Do you allready have an account?
-          <StyledText  onPress={()=>navigation.navigate('LoginFingerprint')}  color="lightBlue">Log in</StyledText>
+          <StyledText  color="lightBlue">Log in</StyledText>
         </StyledText>
         
       </StyledView>
